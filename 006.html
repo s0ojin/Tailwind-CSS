@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- flex -->
+    <!-- 
+        justify-content: center        - justify-center
+        justify-content: space-between - justify-between
+        align-items: flex-start        - items-start
+        align-items: center            - items-center
+        align-self: auto               - self-auto
+        align-slef: flex-start         - self-start
+        align-slef: flex-end           - self-end
+        flex: 1 1 0%                   - flex-1
+        flex: 1 1 auto                 - flex-auto
+        flex: 0 1 auto                 - flex-initial
+        flex: none                     - flex-none
+    -->
+    <h1 class="text-[30px]">flex</h1>
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">1hello</div>
+      <div class="p-2 border-4 border-blue-500">1hello</div>
+      <div class="p-2 border-4 border-blue-500">1hello</div>
+      <div class="p-2 border-4 border-blue-500">1hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+        accusantium tenetur itaque voluptatibus odio provident, optio ipsam
+        aliquid aspernatur rerum explicabo, esse sit quo eveniet adipisci
+        reprehenderit. Quis, adipisci repellat.
+      </div>
+      <div class="p-2 border-4 border-blue-500">2hello</div>
+      <div class="p-2 border-4 border-blue-500">2hello</div>
+      <div class="p-2 border-4 border-blue-500">2hello</div>
+    </div>
+
+    <div class="flex flex-col border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+        accusantium tenetur itaque voluptatibus odio provident, optio ipsam
+        aliquid aspernatur rerum explicabo, esse sit quo eveniet adipisci
+        reprehenderit. Quis, adipisci repellat.
+      </div>
+      <div class="p-2 border-4 border-blue-500">3hello</div>
+      <div class="p-2 border-4 border-blue-500">3hello</div>
+      <div class="p-2 border-4 border-blue-500">3hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+        accusantium tenetur itaque voluptatibus odio provident, optio ipsam
+        aliquid aspernatur rerum explicabo, esse sit quo eveniet adipisci
+        reprehenderit. Quis, adipisci repellat.
+      </div>
+      <div class="p-2 border-4 border-blue-500">4hello</div>
+      <div class="p-2 border-4 border-blue-500">4hello</div>
+      <div class="p-2 border-4 border-blue-500">4hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">5hello</div>
+    </div>
+
+    <div class="flex space-y-1 flex-wrap border-4 border-red-400 m-3">
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6hello</div>
+    </div>
+
+    <div class="flex flex-wrap gap-6 border-4 border-red-400 m-3">
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-400 m-3">
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="w-3/4 p-2 border-4 border-blue-500">9hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">9hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-400 m-3">
+      <div class="w-3/4 p-2 border-4 border-blue-500">10hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10hello</div>
+      <div class="w-3/4 p-2 border-4 border-blue-500">10hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-400 m-3">
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">11hello</div>
+    </div>
+
+    <div class="border-4 border-red-400 m-3">
+      <div class="p-2 inline-block border-4 border-blue-500">12hello</div>
+      <div class="p-2 inline-block border-4 border-blue-500">12hello</div>
+      <div class="p-2 inline-block border-4 border-blue-500">12hello</div>
+      <div class="p-2 inline-block border-4 border-blue-500">12hello</div>
+    </div>
+
+    <div class="flex justify-between border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">13hello</div>
+      <div class="p-2 border-4 border-blue-500">13hello</div>
+      <div class="p-2 border-4 border-blue-500">13hello</div>
+      <div class="p-2 border-4 border-blue-500">13hello</div>
+    </div>
+
+    <div class="flex justify-center border-4 border-red-400 m-3">
+      <div class="p-2 border-4 border-blue-500">14hello</div>
+      <div class="p-2 border-4 border-blue-500">14hello</div>
+      <div class="p-2 border-4 border-blue-500">14hello</div>
+      <div class="p-2 border-4 border-blue-500">14hello</div>
+    </div>
+
+    <div
+      class="flex justify-center items-center w-80 h-80 border-4 border-red-400"
+    >
+      <div
+        class="text-center w-32 h-16 leading-10 p-2 border-4 border-blue-500"
+      >
+        15hello
+      </div>
+    </div>
+
+    <!--     접근성과 모바일 고려 -->
+    <div class="flex md:flex-row flex-col border-4 border-red-400 m-3">
+      <div class="p-2 flex-1 border-4 border-blue-500 order-0">16hello - 1</div>
+      <div class="p-2 flex-1 border-4 border-blue-500 order-2">16hello - 2</div>
+      <div class="p-2 flex-1 border-4 border-blue-500 order-1">16hello - 3</div>
+      <div class="p-2 flex-1 border-4 border-blue-500 order-3">16hello - 4</div>
+    </div>
+
+    <div class="flex md:flex-row flex-col border-4 border-red-400 m-3">
+      <div class="p-2 flex-1 border-4 border-blue-500">17hello - 1</div>
+      <div
+        class="p-2 flex-1 border-4 border-blue-500 order-first md:order-none"
+      >
+        17hello - 2
+      </div>
+      <div class="p-2 flex-1 border-4 border-blue-500">17hello - 3</div>
+      <div class="p-2 flex-1 border-4 border-blue-500">17hello - 4</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="w-40 h-40 bg-blue-200 rounded-full"></div>
+      <div class="p-2 border-4 border-blue-500">18hello</div>
+      <div class="p-2 border-4 border-blue-500">18hello</div>
+      <div class="p-2 border-4 border-blue-500">18hello</div>
+      <div class="p-2 border-4 border-blue-500">18hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="p-5">
+        <div class="w-40 h-40 bg-blue-200 rounded-full"></div>
+      </div>
+      <div class="p-2 border-4 border-blue-500">19hello</div>
+      <div class="p-2 border-4 border-blue-500">19hello</div>
+      <div class="p-2 border-4 border-blue-500">19hello</div>
+      <div class="p-2 border-4 border-blue-500">19hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-400 m-3">
+      <div class="w-40 h-40 bg-blue-200 rounded-full flex-shrink-0"></div>
+      <div class="p-2 border-4 border-blue-500">20hello</div>
+      <div class="p-2 border-4 border-blue-500">20hello</div>
+      <div class="p-2 border-4 border-blue-500">20hello</div>
+      <div class="p-2 border-4 border-blue-500">20hello</div>
+    </div>
+  </body>
+</html>
