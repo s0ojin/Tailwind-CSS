@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>transition</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="ko">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body>
+        <!-- transition & animation -->
+        <div class="flex h-64 justify-center items-center">
+          <button
+            class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-500 rounded p-5 m-3 text-white"
+          >
+            Save Changes
+          </button>
+          <button
+            class="transition ease-linear bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-500 rounded p-5 m-3 text-white"
+          >
+            Save Changes
+          </button>
+          <button
+            class="transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-500 rounded p-5 m-3 text-white"
+          >
+            Save Changes
+          </button>
+        </div>
+
+        <!-- animation -->
+
+        <div class="relative rounded-xl overflow-auto p-8">
+          <div class="flex items-center justify-center">
+            <span class="relative inline-flex">
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-sky-500 bg-white dark:bg-slate-800 transition ease-in-out suration-150 cursor-not-allowed ring-1 ring-slate-900/10 dark:ring-slate-200/20"
+                disabled=""
+              >
+                <span class="flex h-3 w-3">
+                  <span
+                    class="animate-bounce absolute inline-flex h-3 w-1 rounded-full bg-sky-400 opacity-75"
+                  ></span>
+                </span>
+                animation
+              </button>
+            </span>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
