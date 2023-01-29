@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--     grid -->
+    <h1 class="text-[30px]">grid</h1>
+    <div class="grid grid-cols-3 gap-2 border-4 border-red-300 m-3">
+      <div class="border-4 border-blue-500">1hello</div>
+      <div class="border-4 border-blue-500">1hello</div>
+      <div class="border-4 border-blue-500">1hello</div>
+      <div class="border-4 border-blue-500">1hello</div>
+      <div class="border-4 border-blue-500">1hello</div>
+      <div class="border-4 border-blue-500">1hello</div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 border-4 border-red-300 m-3"
+    >
+      <div class="border-4 border-blue-500">2hello</div>
+      <div class="border-4 border-blue-500">2hello</div>
+      <div class="border-4 border-blue-500">2hello</div>
+      <div class="border-4 border-blue-500">2hello</div>
+      <div class="border-4 border-blue-500">2hello</div>
+      <div class="border-4 border-blue-500">2hello</div>
+    </div>
+
+    <div class="grid grid-cols-3 grid-rows-3 gap-2 border-4 border-red-300 m-3">
+      <div class="border-4 border-blue-500">3hello - 1</div>
+      <div class="border-4 border-blue-500">3hello - 2</div>
+      <div class="border-4 border-blue-500">3hello - 3</div>
+      <div class="border-4 border-blue-500">3hello - 4</div>
+      <div class="border-4 border-blue-500">3hello - 5</div>
+      <div class="border-4 border-blue-500">3hello - 6</div>
+    </div>
+
+    <div
+      class="grid grid-cols-3 grid-rows-3 grid-flow-col gap-2 border-4 border-red-300 m-3"
+    >
+      <div class="border-4 border-blue-500">4hello - 1</div>
+      <div class="border-4 border-blue-500">4hello - 2</div>
+      <div class="border-4 border-blue-500">4hello - 3</div>
+      <div class="border-4 border-blue-500">4hello - 4</div>
+      <div class="border-4 border-blue-500">4hello - 5</div>
+      <div class="border-4 border-blue-500">4hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div class="col-span-2 border-4 border-blue-500">5hello - 1</div>
+      <div class="border-4 border-blue-500">5hello - 2</div>
+      <div class="border-4 border-blue-500">5hello - 3</div>
+      <div class="border-4 border-blue-500">5hello - 4</div>
+      <div class="border-4 border-blue-500">5hello - 5</div>
+      <div class="border-4 border-blue-500">5hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div class="col-span-2 row-span-2 border-4 border-blue-500">
+        6hello - 1
+      </div>
+      <div class="col-span-2 border-4 border-blue-500">6hello - 2</div>
+      <div class="border-4 border-blue-500">6hello - 3</div>
+      <div class="border-4 border-blue-500">6hello - 4</div>
+      <div class="border-4 border-blue-500">6hello - 5</div>
+      <div class="border-4 border-blue-500">6hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div
+        class="col-start-1 col-end-3 row-start-1 row-end-3 border-4 border-blue-500"
+      >
+        7hello - 1
+      </div>
+      <div class="border-4 border-blue-500">7hello - 2</div>
+      <div class="border-4 border-blue-500">7hello - 3</div>
+      <div class="border-4 border-blue-500">7hello - 4</div>
+      <div class="border-4 border-blue-500">7hello - 5</div>
+      <div class="border-4 border-blue-500">7hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div class="border-4 border-blue-500">8hello - 1</div>
+      <div class="col-start-1 row-start-2 border-4 border-blue-500">
+        8hello - 2
+      </div>
+      <div class="border-4 border-blue-500">8hello - 3</div>
+      <div class="border-4 border-blue-500">8hello - 4</div>
+      <div class="border-4 border-blue-500">8hello - 5</div>
+      <div class="border-4 border-blue-500">8hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div
+        class="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3 border-4 border-blue-500"
+      >
+        9hello - 1
+      </div>
+      <div class="border-4 border-blue-500">9hello - 2</div>
+      <div class="border-4 border-blue-500">9hello - 3</div>
+      <div class="border-4 border-blue-500">9hello - 4</div>
+      <div class="border-4 border-blue-500">9hello - 5</div>
+      <div class="border-4 border-blue-500">9hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3">
+      <div class="border-4 border-blue-500">10hello - 1</div>
+      <div class="border-4 border-blue-500">10hello - 2</div>
+      <div
+        class="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3 border-4 border-blue-500"
+      >
+        10hello - 3
+      </div>
+      <div class="border-4 border-blue-500">10hello - 4</div>
+      <div class="border-4 border-blue-500">10hello - 5</div>
+      <div class="border-4 border-blue-500">10hello - 6</div>
+    </div>
+
+    <div
+      class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3 items-center"
+    >
+      <div class="border-4 border-blue-500">11hello - 1</div>
+      <div class="border-4 border-blue-500">11hello - 2</div>
+      <div
+        class="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3 border-4 border-blue-500"
+      >
+        11hello - 3
+      </div>
+      <div class="border-4 border-blue-500">11hello - 4</div>
+      <div class="border-4 border-blue-500">11hello - 5</div>
+      <div class="border-4 border-blue-500">11hello - 6</div>
+    </div>
+
+    <div
+      class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3 items-stretch"
+    >
+      <div class="h-20 border-4 border-blue-500">12hello - 1</div>
+      <div class="h-20 border-4 border-blue-500">12hello - 2</div>
+      <div class="border-4 border-blue-500">12hello - 3</div>
+      <div class="h-20 border-4 border-blue-500">12hello - 4</div>
+      <div class="h-20 border-4 border-blue-500">12hello - 5</div>
+      <div class="h-20 border-4 border-blue-500">12hello - 6</div>
+    </div>
+
+    <div
+      class="grid grid-cols-4 grid-rows-4 gap-2 border-4 border-red-300 m-3 justify-items-end"
+    >
+      <div class="h-20 border-4 border-blue-500">13hello - 1</div>
+      <div class="h-20 border-4 border-blue-500">13hello - 2</div>
+      <div class="border-4 border-blue-500">13hello - 3</div>
+      <div class="h-20 border-4 border-blue-500">13hello - 4</div>
+      <div class="h-20 border-4 border-blue-500">13hello - 5</div>
+      <div class="h-20 border-4 border-blue-500">13hello - 6</div>
+    </div>
+
+    <div
+      class="h-80 grid grid-cols-4 gap-2 border-4 border-red-300 m-3 content-around"
+    >
+      <div class="h-20 border-4 border-blue-500">14hello - 1</div>
+      <div class="h-20 border-4 border-blue-500">14hello - 2</div>
+      <div class="border-4 border-blue-500">14hello - 3</div>
+      <div class="h-20 border-4 border-blue-500">14hello - 4</div>
+      <div class="h-20 border-4 border-blue-500">14hello - 5</div>
+      <div class="h-20 border-4 border-blue-500">14hello - 6</div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 border-4 border-red-300 m-3">
+      <div class="border-4 border-blue-500">15hello - 1</div>
+      <div class="border-4 border-blue-500 order-first">15hello - 2</div>
+      <div class="border-4 border-blue-500">15hello - 3</div>
+      <div class="border-4 border-blue-500">15hello - 4</div>
+      <div class="border-4 border-blue-500">15hello - 5</div>
+      <div class="border-4 border-blue-500">15hello - 6</div>
+    </div>
+  </body>
+</html>
